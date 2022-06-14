@@ -1,5 +1,4 @@
 * {
-    /* border: 1px solid red; */
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -100,7 +99,6 @@ body {
     font-weight: 500;
     color: var(--medium-gray);
     margin-inline: 20px;
-
 }
 
 #ou {
@@ -206,10 +204,6 @@ p {
     gap: 14px;
 }
 
-.link {
-    display: block;
-}
-
 @media screen and (max-width: 768px) {
     .wrapper {
         width: 100%;
@@ -218,5 +212,4 @@ p {
     .cellphone {
         display: none;
     }
-
 }
