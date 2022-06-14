@@ -1,0 +1,222 @@
+* {
+    /* border: 1px solid red; */
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 100px;
+    background-color: #fafafa;
+    --facebook-color: rgb(0, 55, 107);
+    --light-blue: #0095f6;
+    --medium-gray: #8e8e8e;
+    --gray: #e6e6e6;
+    --light-gray: #fafafa;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.wrapper {
+    align-items: center;
+    width: 650px;
+    margin-inline: auto;
+    flex-direction: column;
+}
+
+.login-wrapper {
+    justify-content: center;
+
+}
+
+.form>img {
+    width: 175px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.cellphone {
+    width: 300px;
+    height: 600px;
+    margin-right: 30px;
+}
+
+.main-wrapper {
+    margin-top: 70px;
+    flex-direction: row;
+
+}
+
+.box {
+    width: 350px;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid var(--gray);
+    margin-top: 10px;
+
+}
+
+.form {
+    align-items: center;
+}
+
+.login-form {
+    width: 78%;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.input {
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+    border: 1px solid var(--gray);
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.btn {
+    margin-top: 8px;
+    background-color: var(--light-blue);
+    color: white;
+    padding: 6px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: var(--medium-gray);
+}
+
+.ou {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--medium-gray);
+    margin-inline: 20px;
+
+}
+
+#ou {
+    flex-direction: row;
+    width: 78%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#ou .line {
+    content: "";
+    position: relative;
+    flex-grow: 1;
+    background-color: var(--gray);
+    height: 1px;
+}
+
+.facebook-login {
+    margin-top: 15px;
+    align-items: center;
+    gap: 6px;
+}
+
+.facebook-login span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--facebook-color);
+}
+
+.icon-16 {
+    width: 16px;
+    height: 16px;
+}
+
+.forgot {
+    font-size: 12px;
+    margin-inline: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--facebook-color);
+}
+
+#signup p {
+    color: rgb(38, 38, 38);
+    font-size: 13px;
+    margin: 20px auto 20px auto;
+}
+
+#signup a {
+    font-weight: 500;
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.get-app {
+    font-size: 13px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    color: rgb(38, 38, 38);
+}
+
+.stores {
+    justify-content: center;
+    gap: 8px;
+}
+
+.stores>img {
+    max-width: 130px;
+}
+
+.footer {
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.footer a,
+label,
+p {
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--medium-gray);
+    text-align: center;
+    line-height: 22px;
+}
+
+.footer select {
+    border: none;
+    background-color: transparent;
+    color: var(--medium-gray);
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.footer option {
+    text-align: right;
+}
+
+.data {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.link {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .cellphone {
+        display: none;
+    }
+
+}
