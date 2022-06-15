@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="title">Calculator</h1>
+            <h4 id="display"></h4>
+                <div class="btns-grid">
+                    <div class="number-grid">
+                        <a class="btn btn-op" id="btn-" onclick="addOperator('-')">-</a>
+                        <a class="btn btn-number" id="btn-9" onclick="addNumber(9)">9</a>
+                        <a class="btn btn-number" id="btn-8" onclick="addNumber(8)">8</a>
+                        <a class="btn btn-number" id="btn-7" onclick="addNumber(7)">7</a>
+                        <a class="btn btn-op" id="btn+" onclick="addOperator('+')">+</a>
+                        <a class="btn btn-number" id="btn-6" onclick="addNumber(6)">6</a>
+                        <a class="btn btn-number" id="btn-5" onclick="addNumber(5)">5</a>
+                        <a class="btn btn-number" id="btn-4" onclick="addNumber(4)">4</a>
+                        
+                        <a class="btn btn-op" id="btn-Enter" onclick="calculate()">=</a>
+                        <a class="btn btn-number" id="btn-3" onclick="addNumber(3)">3</a>
+                        <a class="btn btn-number" id="btn-2" onclick="addNumber(2)">2</a>
+                        <a class="btn btn-number" id="btn-1" onclick="addNumber(1)">1</a>
+                        <a class="btn btn-number" id="btn-0" onclick="addNumber(0)">0</a>
+                        <a class="btn" id="btn-clear" href='javascript:clear();'>Clear</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
