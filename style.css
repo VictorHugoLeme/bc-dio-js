@@ -1,32 +1,20 @@
 :root {
-    --color-1: #0081a7;
-    --color-2: #7f5af0;
-    --color-3: #fdfcdc;
-    --color-4: #fed9b7;
-    --color-5: #f07167;
-
-    --color-1b: #16161a;
-    --color-2b: #94d2bd;
-    --color-3b: #e9c46a;
-    --color-4b: #f4a261;
-    --color-5b: #e76f51;
-
+    --color-1: #7f5af0;
+    --color-2: #16161a;
     --light-text: #fffffe;
-    --dark-text: #264653;
-    --paragraph: #dfdfdf;
+    --paragraph: #ebe9e9;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-1b);
+    background-color: var(--color-2);
     margin: 0;
     padding: 0;
-
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .container {
-
     width: 100%;
 }
 
@@ -42,14 +30,14 @@ body {
 .card {
     text-decoration: none;
     border-radius: 10px;
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 230px;
     margin: auto;
     padding: 20px;
     text-align: center;
-    font-family: arial;
+
     transition: 0.3s;
 }
 
@@ -66,7 +54,7 @@ body {
 
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 4px 8px 0 black;
 }
 
 @media screen and (max-width: 650px) {
