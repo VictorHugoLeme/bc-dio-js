@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +46,24 @@ header .list-items {
     max-width: 260px;
     justify-content: space-between;
     align-items: center;
+}
+
+#roll-up {
+    content: "";
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(18, 42, 87);
+    color: white;
+}
+
+#roll-up>img {
+    position: absolute;
+    top: 7px;
+    left: 5px;
 }
 
 .list-items li a {
@@ -271,8 +293,9 @@ footer {
     justify-content: space-around;
 }
 
-footer span {
+footer a {
     font-weight: 700;
+    color: #fff;
 }
 
 @media screen and (max-width: 1100px) {
