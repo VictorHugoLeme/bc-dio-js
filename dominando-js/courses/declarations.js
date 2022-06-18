@@ -272,6 +272,60 @@ user2.showInfo();
 console.log("`This` outside a function: ");
 console.log(this);
 
-//in a function
+// within a function
 console.log("`This` inside a function: ");
 console.log("The result is massive LOL.")
+
+const user3 = {
+    name: "Victor",
+}
+
+// within a function with a object
+function getAttribute() {
+    return this.name;
+}
+console.log("The result of a .call is: " + getAttribute.call(user3));
+
+const myObject = {
+    num1: 1,
+    num2: 2,
+};
+
+function sum3(a, b) {
+    return this.num1 + this.num2 + a + b;
+}
+console.log("The result of a .call with arguments is: " + sum3.call(myObject, 3, 4));
+
+// apply
+
+console.log("The result of a .apply is: " + getAttribute.apply(myObject));
+console.log("The result of a .apply with arguments is: " + sum3.apply(myObject, [3, 4]));
+
+// bind
+
+const returnNames = function () {
+    return this.name;
+}
+var victor = returnNames.bind({ name: "Victor" });
+console.log("The result of a .bind is: " + victor());
+
+console.groupEnd()
+console.log("================== ARROW FUNCTION =================")
+console.group()
+
+// arrow function
+
+const helloWorld = () => "Hello World";
+console.log("Arrow function: " + helloWorld());
+
+const sum4 = (a, b) => a + b;
+console.log("Arrow function with arguments: " + sum4(1, 2));
+
+const simpleValue = a => a;
+console.log("Arrow function with one argument: " + simpleValue(1));
+console.group()
+console.log("Arrow functions doesn't do hoisting");
+console.log("`this` is always global");
+console.log("Theres no `arguments` object");
+console.log("The constructor can't be called");
+console.groupEnd()
