@@ -111,6 +111,12 @@ body {
     background-color: var(--color-1-dark);
 }
 
+@media screen and (max-width: 920px) {
+    .cards {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .cards {
         width: 90%;
