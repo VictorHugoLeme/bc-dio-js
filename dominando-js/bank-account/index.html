@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     
-    <title>Palindrome verifier</title>
+    <title>Bank account</title>
 </head>
 <body>
     <div class="container">
         <div class="wrapper">
-            <h1 class="title">Palindrome</h1>
+            <h1 class="title">Bank account</h1>
+            <h2 id="balance">$ 20.10</h2>
+            <label for="input">Type the ammount.</label>
             <input type="text" id="input"></input>
-                <a class="btn" href='javascript:verify();'>Verify</a>
+            <p>In a Student acccount, you have a $500 limit per draw</p>
+            <a class="btn draw" href='javascript:draw();'>Draw</a>
+            <a class="btn deposit" href='javascript:deposit();'>Deposit</a>
             <div class="light" id="green"></div>
             <div class="light" id="red"></div>
     </div>

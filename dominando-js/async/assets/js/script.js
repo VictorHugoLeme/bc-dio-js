@@ -13,10 +13,10 @@ const url = 'https://api.github.com/users/VictorHugoLeme'
 
 const getUser = async () => {
     try {
-        const data = await fetch(url);
-        const json = await data.json();
+        const data = await fetch(url)
+            .then(res => res.json());
 
-        return json.avatar_url;
+        return data.avatar_url;
     } catch (error) {
         console.log(error.message);
     }
