@@ -63,13 +63,10 @@ body {
     text-decoration: none;
     border-radius: 10px;
     background-color: var(--color-1);
-    display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 230px;
-    margin: auto;
     padding: 20px;
     text-align: center;
-
     transition: var(--transition);
 }
 
